@@ -1,8 +1,8 @@
 # 前言
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+记录本人的一些笔记供自己查询。
 
-## Commands 1231
+## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
