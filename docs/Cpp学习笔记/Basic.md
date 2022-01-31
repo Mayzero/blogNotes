@@ -50,3 +50,23 @@ int main()
 ```
 !!! Best practice
     将文本输出到控制台时，首选 '\n' 而不是 std::endl。
+
+## 基本格式的建议
+1.制表符设置为 4 个缩进空格
+2.如果用运算符（例如 << 或 +）拆分长行，则应将运算符放在下一行的开头，而不是当前行的结尾
+```c++
+std::cout << 3 + 4
+    + 5 + 6
+    * 7 * 8;
+```
+3.通过对齐值或注释或在代码块之间添加间距，使用空格使您的代码更易于阅读。
+```c++
+cost          = 57;
+pricePerItem  = 24;
+value         = 5;
+numberOfItems = 17;
+
+std::cout << "Hello world!\n";                  // cout lives in the iostream library
+std::cout << "It is very nice to meet you!\n";  // these comments are easier to read
+std::cout << "Yeah!\n";                         // especially when all lined up
+```
