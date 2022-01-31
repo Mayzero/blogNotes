@@ -1,8 +1,23 @@
-site_name: BlogNotesQQQ
+site_name: Mayzero的记录本
 repo_url: https://github.com/Mayzero/blogNotes
 theme:
   name: material
+
 nav:
     - 前言: index.md   
     - cpp学习笔记: 
       - 基础知识: cpp学习笔记/Basic.md
+
+markdown_extensions:  
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+
+
+plugins:
+  - search
+  
