@@ -1,6 +1,6 @@
 # 基础知识
 
-## 大括号初始化
+## 1.大括号初始化
 不幸的是，直接初始化不能用于所有类型的初始化（例如用数据列表初始化对象）。为了提供更一致的初始化机制，有使用花括号的大括号初始化（也称为统一初始化或列表初始化）。
 
 大括号初始化有三种形式：
@@ -22,7 +22,7 @@ int width { 4.5 }; // error: not all double values fit into an int
 
     int width {}; // zero initialization to value 0
 
-## iostream简介：cout、cin、endl
+## 2.iostream简介：cout、cin、endl
 容易混淆 std::cin、std::cout、插入运算符 (<<) 和提取运算符 (>>)。这是一个容易记住的方法：
 
 'std::cin' 和 'std::cout' 总是在语句的左侧。
@@ -51,7 +51,7 @@ int main()
 !!! note "Best practice"
     将文本输出到控制台时，首选 '\n' 而不是 std::endl。
 
-## 基本格式的建议
+## 3.基本格式的建议
 1.制表符设置为 4 个缩进空格
 2.如果用运算符（例如 << 或 +）拆分长行，则应将运算符放在下一行的开头，而不是当前行的结尾
 ```c++

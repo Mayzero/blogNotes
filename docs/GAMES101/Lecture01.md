@@ -30,3 +30,18 @@
 
 # Most recommended reference
 - Steve Marschner and Peter Shirley, "Fundamentals of Computer Graphics", 3rd or later edition.
+
+# Dot Product in Graphics
+- Find angle between two vectors
+
+    (e.g. cosine of angle between light source and surface)
+
+- Finding projection of one vector on another
+
+- Measure how close two directions are
+    Decompose a vector
+    Determine forward / backward
+
+# Cross Product in Graphics 叉乘
+Determine left / right
+Determine inside / outside
