@@ -7,6 +7,8 @@ nav:
     - 前言: index.md   
     - cpp学习笔记: 
       - 基础知识: cpp学习笔记/Basic.md
+    - GAMES101: 
+      - Lecture01计算机图形学概述: GAMES101/Lecture01.md
 
 markdown_extensions:  
   - abbr
