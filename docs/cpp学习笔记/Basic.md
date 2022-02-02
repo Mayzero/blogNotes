@@ -26,9 +26,13 @@ int width { 4.5 }; // error: not all double values fit into an int
 容易混淆 std::cin、std::cout、插入运算符 (<<) 和提取运算符 (>>)。这是一个容易记住的方法：
 
 'std::cin' 和 'std::cout' 总是在语句的左侧。
+
 'std::cout' 用于输出一个值（cout = 字符输出）
+
 'std::cin' 用于获取输入值（cin = 字符输入）
+
 '<<' 与 'std::cout' 一起使用，并显示数据移动的方向（如果 std::cout 表示控制台，则输出数据正在从变量移动到控制台）。std::cout << 4 将 4 的值移动到控制台
+
 '>>' 与 std::cin 一起使用，并显示数据移动的方向（如果 std::cin 表示键盘，则输入数据正在从键盘移动到变量）。std::cin >> x 将用户从键盘输入的值移动到 x
 
 ### std::endl 与 '\n'
