@@ -205,6 +205,7 @@ void something(int) // error: wrong return type
 
 !!! Note
     使用双引号来包含您已编写或预期在当前目录中找到的头文件。使用尖括号来包含您的编译器、操作系统或您在系统其他地方安装的第三方库附带的头文件。
+
 ### Header file best practices
 - 始终包括头守卫（我们将在下一课中介绍这些内容）。
 
@@ -221,3 +222,26 @@ void something(int) // error: wrong return type
 - 仅 #include 您需要的内容（不要仅仅因为可以包含所有内容）。
 
 - 不要#include .cpp 文件。
+
+## header guard 头文件保护
+对于头文件，很容易导致头文件中的定义被多次包含的情况。当一个头文件#includes另一个头文件（这很常见）时，可能会发生这种情况。
+
+标头保护是采用以下形式的条件编译指令：
+```c++
+#ifndef SOME_UNIQUE_NAME_HERE
+#define SOME_UNIQUE_NAME_HERE
+
+// your declarations (and certain types of definitions) here
+
+#endif
+```
+你所有的头文件都应该有头文件保护。SOME_UNIQUE_NAME_HERE 可以是您想要的任何名称，但按照惯例设置为头文件的完整文件名，全部大写，空格或标点使用下划线。例如， square.h 将具有标头保护：
+```c++
+#ifndef SQUARE_H
+#define SQUARE_H
+
+int getSquareSides(); // forward declaration for getSquareSides
+int getSquarePerimeter(int sideLength); // forward declaration for getSquarePerimeter
+
+#endif
+```
