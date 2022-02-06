@@ -71,9 +71,8 @@ Use homogeneous coordinates again:
 
 * 3D vector = $(x, y, z, 0)^T $
 
-In general, (x, y, Z, W) (w != 0) is the 3D point: 
-
-(x/w, y/w, Z/w)
+!!! Note
+    In general, $(x, y, z, w) (w != 0)$ is the 3D point: $(x/w, y/w, z/w)$
 
 ### 3.1 Rotation around x-, y-, or z-axis
 $R_x(\alpha)$ = $\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & cos(\alpha) & -sin(\alpha) & 0\\ 0 & sin(\alpha) & cos(\alpha) & 0 \\ 0 & 0 & 0 &1 \end{bmatrix}$
