@@ -223,7 +223,7 @@ void something(int) // error: wrong return type
 
 - 不要#include .cpp 文件。
 
-## header guard 头文件保护
+## 8.header guard 头文件保护
 对于头文件，很容易导致头文件中的定义被多次包含的情况。当一个头文件#includes另一个头文件（这很常见）时，可能会发生这种情况。
 
 标头保护是采用以下形式的条件编译指令：

@@ -34,13 +34,13 @@
 ## 6.Dot Product in Graphics
 $\overrightarrow {x} \cdot \overrightarrow {y} = ||\overrightarrow {x}||||\overrightarrow {y}||cos\theta$
 
-点积结果是一个数
+点积结果是一个数, 几何意义：投影
 
 - Find angle between two vectors
 
     (e.g. cosine of angle between light source and surface)
 
-- Finding ==projection投影== of one vector on another 几何意义：投影
+- Finding projection(投影) of one vector on another 
 
 - Measure how close two directions are
     

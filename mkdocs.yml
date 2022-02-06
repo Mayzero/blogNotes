@@ -9,7 +9,8 @@ nav:
       - 基础知识: cpp学习笔记/Basic.md
     - GAMES101: 
       - Lecture01 计算机图形学概述: GAMES101/Lecture01.md
-      - Lectre03 变换（二维与三维）: GAMES101/Lecture03.md
+      - Lecture03 变换（二维与三维）: GAMES101/Lecture03.md
+      - Lecture04 变换（模型、视图、投影）: GAMES101/Lecture04.md
 
 markdown_extensions:  
   - abbr
