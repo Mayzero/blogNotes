@@ -34,3 +34,21 @@ $M_{viewport}$ = $\begin{bmatrix} \frac{width}{2} & 0 & 0 & \frac{width}{2} \\ 0
 4. Rasterizing Triangles into Pixels
 
 ## 2. Drawing to Raster Displays
+### 2.1 Triangles - Fundamental Shape Primitives
+#### Why triangles?
+- Most basic polygon
+- Break up other polygons
+
+#### Unique properties
+- Guaranteed to be planar
+- Well-defined interior
+- Well-defined method for interpolating values at vertices over triangle (barycentric interpolation 重心坐标)
+
+## A Simple Approach: Sampling
+Sample If Each Pixel Center Is Inside Triangle
+
+!!! Note "Inside? Recall: Three Cross Products!"
+    全为正或全为负即在三角形内部
+
+#### Checking All Pixels on the Screen?
+Use a Bounding Box!
