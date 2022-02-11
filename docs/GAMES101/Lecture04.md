@@ -78,9 +78,10 @@ $M_{persp->ortho}$ = $\begin{bmatrix} n & 0 & 0 & 0 \\ 0 & n & 0 & 0\\ 0 & 0 & n
 
 ### 一些转换
 1. vertical field-of-view (fovY) 垂直视角，视野
-2. aspect ratio 宽高比
+2. aspect ratio 宽高比 ==(assume symmetry i.e. l = -r, b = -t)==
 
 !!! Note "How to convert from fovY and aspect to l, r, b, t"
     $tan \frac{fovY}{2} = \frac{t}{|n|}$
     
     $aspect = \frac{r}{t}$
+
