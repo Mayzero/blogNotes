@@ -12,7 +12,7 @@ nav:
       - Lecture03 变换（二维与三维）: GAMES101/Lecture03.md
       - Lecture04 变换（模型、视图、投影）: GAMES101/Lecture04.md
       - Lecture05 光栅化（三角形的离散化）: GAMES101/Lecture05.md
-      - Assignment01 : GAMES101/Assignment01.md
+      - Assignment01 作业1 旋转与投影: GAMES101/Assignment01.md
 
 markdown_extensions:  
   - abbr
