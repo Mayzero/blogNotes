@@ -4,6 +4,7 @@
 
 内置函数的返回值是弧度，要先把角度换成弧度
 > 弧度=角度*pi/180
+
 ```c++
 Eigen::Matrix4f get_model_matrix(float rotation_angle)
 {
@@ -50,6 +51,9 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,float zN
 ```
 
 ## 结果
-![image](./image/assignment1.png)
+
+<img src="./image/assignment1.png" alt="Image assignment1">
+
 旋转后的结果
-![image](./image/assignment1-1.png)
+
+<img src="./image/assignment1.png" alt="Image assignment1">
