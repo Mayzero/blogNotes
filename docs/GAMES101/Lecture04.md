@@ -68,10 +68,19 @@ $M_{ortho}$ = $\begin{bmatrix} \frac {2}{r-l} & 0 & 0 & 0 \\ 0 & \frac {2}{t-b} 
 #### How to do perspective projection ?
 1. First “squish” the frustum into a cuboid (n -> n, f -> f) ($M_{persp->ortho})$
 2. Do orthographic projection ($M_{ortho}$, already known!)
-3. 通过挤压后的$x,y$得到挤压后的点，根据相似三角形特性，推出点$(nx,ny,unknown,z)$,可得矩阵的1，2，4行。
+3. 通过挤压后的$x,y$得到挤压后的点，根据相似三角形特性，推出点$(nx,ny,unknown,z)$,可得矩阵的1，2，4行。（==n未知,为挤压后的点在z轴上距原点的距离==）
 4. 通过以下两个特点，通过代入两个特殊点近平面$(x,y,n,1)$，远平面$(0,0,f)$得到第三行。
     - Any point on the near plane will not change
     - Any point’s z on the far plane will not change
 
 最终矩阵结果如下：
 $M_{persp->ortho}$ = $\begin{bmatrix} n & 0 & 0 & 0 \\ 0 & n & 0 & 0\\ 0 & 0 & n+f & -nf \\ 0 & 0 & 1 & 0 \end{bmatrix}$
+
+### 一些转换
+1. vertical field-of-view (fovY) 垂直视角，视野
+2. aspect ratio 宽高比
+
+!!! Note "How to convert from fovY and aspect to l, r, b, t"
+    $tan \frac{fovY}{2} = \frac{t}{|n|}$
+    
+    $aspect = \frac{r}{t}$
