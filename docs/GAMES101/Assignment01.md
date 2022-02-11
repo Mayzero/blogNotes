@@ -50,6 +50,6 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,float zN
 ```
 
 ## 结果
-![image](/docs/GAMES101/image/assignment1.png)
+![image](./image/assignment1.png)
 旋转后的结果
-![image](/docs/GAMES101/image/assignment1-1.png)
+![image](./image/assignment1-1.png)
