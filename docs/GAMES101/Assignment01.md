@@ -54,6 +54,16 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,float zN
 
 <img src="./image/assignment1.png" alt="Image assignment1">
 
+<img src="../image/assignment1.png" alt="Image assignment1">
+
+![image](/docs/assets/image/assignment1.png)
+
 旋转后的结果
 
-<img src="./image/assignment1.png" alt="Image assignment1">
+<img src="/docs/assets/image/assignment1.png" alt="Image assignment1-1">
+
+<img src="/blogNotes/docs/assets/image/assignment1.png" alt="Image assignment1-123">
+
+![image](/blogNotes/docs/assets/image/assignment1.png)
+
+![image](./image/assignment1.png)
